@@ -1,3 +1,8 @@
+/*
+  This will convert minutes and seconds to seconds and print the total and average.
+  Useful for evaluating Track/XC times.
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -17,7 +22,7 @@ int main(int argc, char *argv[])
 
 	int i, x;
 	for (i = 1, x = 0; i < argc; x += parse(argv[i++]));
-	printf("Total: %d\n", x);
+	printf("Total: %d (%s)\n", x, unparse(x));
 	printf("Average: %d (%s)\n", (x / (argc - 1)), unparse(x / (argc - 1)));
 }
 
