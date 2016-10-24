@@ -1,6 +1,7 @@
-/*
-  This will convert minutes and seconds to seconds and print the total and average.
-  Useful for evaluating Track/XC times.
+/* timer.c - Copyright (C) 2016 Aaron Ryan Klingler
+
+   This will convert minutes and seconds to seconds and print the total and average.
+   Useful for evaluating Track/XC times.
 */
 
 #include <stdio.h>
