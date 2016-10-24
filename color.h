@@ -1,3 +1,16 @@
+/* color.h - Copyright (C) 2016 Aaron Ryan Klingler
+
+   Definitions for printing colors in an ANSI/VT100 terminal
+   Use them like so:
+   
+	printf(TEXT_RED "Whatever You Want" ATTR_RESET);
+
+   or this way:
+
+	printf("%s%s%s", TEXT_RED, "This is a message", ATTR_RESET);
+     
+*/
+
 #define ATTR_RESET   "\e[0m"
 #define ATTR_BOLD    "\e[1m"
 #define ATTR_DIM     "\e[2m"
