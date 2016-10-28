@@ -1,0 +1,13 @@
+??=if !defined(R1)
+??=define R1
+??=define the int
+??=elif defined(R1) && !defined(R2)
+??=define R2
+??=define function ()
+??=elif defined(R1) && defined(R2) && !defined(R3)
+??=define R3
+??=define P putchar
+??=elif defined(R1) && defined(R2) && defined(R3) && !defined(R4)
+??=define R4
+??=define _ return
+??=endif
